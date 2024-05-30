@@ -42,7 +42,8 @@ Note: This step requires MacOS 10.15
     1. Open a new white and empty screen
     2. Capture the user's touch on that screen (x and y coordinates only)
     3. Coordinates will be sent to the other peer using a data channel from webrtc protocol
-    4. Only if the other peer will press on the "touch" button on his phone, that will open the white screen, a small red circle will be drawn on the screen every time it gets a new x,y coordinates. The circle will be with a fixed size such that the center of the circle is x,y
+    4. Only if the other peer will press on the "touch" button on his phone, that will open the white screen, a small red circle will be drawn on the screen every time it gets a new <x,y> coordinates. The drawn circle will be proportionally to the peer’s screen size.
     5. Of course, both peers will be able to touch their screens and see the touchs of the other peer
-    6. If you're using a simulator as one of the peers - it is not mandatory to support touch events from the simulator. only from the pysical device.
+    6. Make sure that the solution applies on a real device (not only on an emulator)
+    7. Make sure you support different types touches (swipe/ scroll / multi-touch/ point)
     
